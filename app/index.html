@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Котейка</title>
+	<meta name="description" content="">
+
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="icon" href="img/favicon.png">
+	<meta property="og:image" content="">
+	<link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/selectize.css">
+	<link rel="stylesheet" href="css/styles.min.css">
+
+</head>
+
+<body>
+
+
+
+
+	<div class="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="logo"><a href="/"><img src="img/@2x/logo.png" alt="alt"></a></div>
+				<div class="menu">
+					<ul class="menu__list">
+						<li class="menu__item"><a class="menu__link" href="">Почему мы</a></li>
+						<li class="menu__item"><a class="menu__link" href="">Номера</a></li>
+						<li class="menu__item"><a class="menu__link" href="">Отзывы</a></li>
+						<li class="menu__item"><a class="menu__link" href="">Как нас найти</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="container">
+			<div class="main__top">
+				<h1 class="h1">Наши номера</h1>
+				<select>
+					<option value="1">↑ По площади</option>
+					<option value="2">↓ По площади</option>
+					<option value="3">↑ По цене</option>
+					<option value="4">↓ По цене</option>
+				</select>
+			</div>
+			<div class="content">
+				<div class="filter">
+					<div class="filter__title">Цена за сутки,₽</div>
+					<div class="filter__price">
+						<div class="filter__item">
+							<input id="price_start" type="number" value="100">
+						</div>
+						<div class="filter__item">
+							<input id="price_end" type="number" value="600">
+						</div>
+					</div>
+					<div class="filter__space">
+						<div class="filter__space-title">	
+							Площадь
+						</div>
+						<div class="input-cheked">
+							<input id="check1" type="checkbox" name="check" value="0,63">
+							<label class="input-cheked__label" for="check1"><span class="input-cheked__text">0,63</span> м2</label>
+						</div>
+						<div class="input-cheked">
+							<input id="check2" type="checkbox" name="check" value="0,90">
+							<label class="input-cheked__label" for="check2"><span class="input-cheked__text">0,90</span> м2</label>
+						</div>
+						<div class="input-cheked">
+							<input id="check3" type="checkbox" name="check" value="1,13">
+							<label class="input-cheked__label" for="check3"><span class="input-cheked__text">1,13</span> м2</label>
+						</div>
+						<div class="input-cheked">
+							<input id="check4" type="checkbox" name="check" value="1,56">
+							<label class="input-cheked__label" for="check4"><span class="input-cheked__text">1,56</span> м2</label>
+						</div>
+						<div class="input-cheked">
+							<input id="check5" type="checkbox" name="check" value="2,56">
+							<label class="input-cheked__label" for="check5"><span class="input-cheked__text">2,56</span> м2</label>
+						</div>
+						<div class="input-cheked">
+							<input id="check6" type="checkbox" name="check" value="2,88">
+							<label class="input-cheked__label" for="check6"><span class="input-cheked__text">2,88</span> м2</label>
+						</div>
+
+					</div>
+					<div class="filter__space">
+						<div class="filter__space-title">	
+							Оснащение номера
+						</div>
+						<div class="input-cheked">
+							<input id="check7" type="checkbox" name="check" value="0">
+							<label class="input-cheked__label" for="check7"><span class="input-cheked__text">Пустой номер</span></label>
+						</div>
+						<div class="input-cheked">
+							<input id="check8" type="checkbox" name="check" value="1">
+							<label class="input-cheked__label" for="check8"><span class="input-cheked__text">Лежак</span></label>
+						</div>
+						<div class="input-cheked">
+							<input id="check9" type="checkbox" name="check" value="2">
+							<label class="input-cheked__label" for="check9"><span class="input-cheked__text">Когтеточка</span></label>
+						</div>
+						<div class="input-cheked">
+							<input id="check10" type="checkbox" name="check" value="3">
+							<label class="input-cheked__label" for="check10"><span class="input-cheked__text">Игровой-комплекс</span></label>
+						</div>
+						<div class="input-cheked">
+							<input id="check11" type="checkbox" name="check" value="4">
+							<label class="input-cheked__label" for="check11"><span class="input-cheked__text">Домик</span></label>
+						</div>
+					</div>
+
+					<div class="filter__btn">
+						<div id="submitBtn" class="btn">Применить</div>
+						<div id="cancleBtn" style="display:none" class="btn">Сбросить фильтр</div>
+					</div>
+					
+				</div>
+				<div class="content__shop">
+					<ul class="cats" id="catalog">
+
+					</ul>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/catalog.js"></script>
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
